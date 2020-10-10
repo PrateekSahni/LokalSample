@@ -1,0 +1,41 @@
+The idea is first to think how the functions would work.
+
+The first thing in mind was to think how to create task.
+
+For Creating Todo - 
+
+1. A bean is a must for populating data.
+2. Simple thing is to create a form and populate the date into bean.
+
+Now the question comes where we should store the Todo tasks.
+Since this is a simple application we can overcome the headache of JDBC.
+
+I have stored the data into session object. 
+
+We will fetch the tasks of the user using session and store it into the same.
+
+This way we have handled the logical and backend part.
+
+
+-----------------------------------------------------
+
+
+Now comes the front end part.
+
+We will simple fetch the objects from session.
+
+We will compare each task date with current date time.
+
+if current times is less than the expiry time of task we will show it is active todo.
+
+if current time is equal or greater than the expiry time of Todo we will show it in expired tasks.
+
+------------------------------------------------------------
+
+Coming to the form button we have used simple Jquery for hiding and showing the form
+
+------------------------------------------------------------------------
+
+
+Thank You :)
+The assignment was real fun.
